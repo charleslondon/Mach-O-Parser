@@ -135,7 +135,7 @@ void handleCommand(std::ifstream& fin, std::ofstream& fout, Command_Struct cmd)
 
 void decodeFile(const std::string& inputFileName, const std::string& outputFileName)
 {
-	std::ifstream fin(inputFileName.c_str(), std::ios::binary);
+	std::ifstream fin(inputFileName.c_str(), std::ifstream::binary);
 	std::ofstream fout(outputFileName.c_str(), std::ofstream::binary);
 
 	mach_header_64 header = decodeHeader(fin);
