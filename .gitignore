@@ -5,3 +5,4 @@ Release/
 *.pdb
 *.log
 *.tlog
+*.out
